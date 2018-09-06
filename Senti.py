@@ -12,7 +12,7 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 
 #SENTENCE = argv 
-SENTENCE = ['Have a nice day']
+SENTENCE = ['']
 #SENTENCE = input("Enter the sentence")
 
 def top_elements(array, k):
@@ -61,5 +61,5 @@ def get_senti(SENTENCE):
             Senti.append(emotion[scores[0][j]])
     return Senti
 
-Sentiment = get_senti(SENTENCE)
+Sentiment = get_senti(SENTENCE=['Have a nice day'])
 
