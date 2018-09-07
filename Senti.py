@@ -46,7 +46,7 @@ def get_senti(SENTENCE):
     
     #print('Running predictions.')
     prob = model.predict(tokenized)
-    
+    Senti = []
     #print('Writing results to {}'.format(OUTPUT_PATH))
     scores = []
     for i, t in enumerate(SENTENCE):
