@@ -58,7 +58,7 @@ def get_senti(SENTENCE):
         t_score.extend([t_prob[ind] for ind in ind_top])
         scores.append(t_score)
         for j in list(range(2,7)):
-            Senti.append(emotion[scores[0][j]])
+            Senti.append(emotion[scores[i][j]])
     return Senti
 
 Sentiment = get_senti(SENTENCE=['Have a nice day'])
